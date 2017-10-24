@@ -83,8 +83,7 @@ int main(void)
     pthread_create( &con2, NULL, (void*) con_thread2, list_p );
 
 
-    /* Imagine a method to free all nodes */
-
+    /* Wait for all threads to finish so that all the output is shown */
     pthread_join(prod1, NULL);
     pthread_join(prod2, NULL);
     pthread_join(con1, NULL);
@@ -217,11 +216,20 @@ void con_thread1(list_t* list)
         print_all(list, "THREAD - con1_thread1 contents prior");
 
         /* Upon exiting the loop, iterator_node has an odd random value */
-        struct node_t* node_to_remove = list->head; 
-        list->head = list->head->next;
-        list->head->prev = NULL;
-        list->current_size--;
-        free(node_to_remove);
+        if (list->current_size > 1) { /* Don't try and access NULL members if it's the last element you're removing */
+            struct node_t* node_to_remove = list->head; 
+            list->head = list->head->next;
+            list->head->prev = NULL;
+            list->current_size--;
+            free(node_to_remove);
+        }
+        else {
+            free(list->head);
+            list->current_size--;
+            printf("List is now empty\n");
+            pthread_mutex_unlock(&list_mutex);
+            break;
+        }
 
         print_all(list, "THREAD - con1_thread1 contents after");
 
@@ -258,11 +266,20 @@ void con_thread2(list_t* list)
         print_all(list, "THREAD - con2_thread1 contents prior");
 
         /* Upon exiting the loop, iterator_node has an odd random value */
-        struct node_t* node_to_remove = list->head; 
-        list->head = list->head->next;
-        list->head->prev = NULL;
-        list->current_size--;
-        free(node_to_remove);
+        if (list->current_size > 1) { /* Don't try and access NULL members if it's the last element you're removing */
+            struct node_t* node_to_remove = list->head; 
+            list->head = list->head->next;
+            list->head->prev = NULL;
+            list->current_size--;
+            free(node_to_remove);
+        }
+        else {
+            free(list->head);
+            list->current_size--;
+            printf("List is now empty\n");
+            pthread_mutex_unlock(&list_mutex);
+            break;
+        }
 
         print_all(list, "THREAD - con2_thread1 contents after");
 
@@ -290,8 +307,3 @@ void print_all(list_t* list, char* thread_name)
     return;    
 }
 
-void remove_all(list_t* list)
-{
-//    while c
-    return;
-}

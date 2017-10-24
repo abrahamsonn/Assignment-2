@@ -1,0 +1,1031 @@
+All nodes created
+INITIAL CONTENTS:
+	27, 37, 26
+Calling pthread_create
+
+THREAD - pro1_output_p contents prior:
+	27, 37, 26
+
+THREAD - pro1_output_p contents after:
+	27, 37, 26, 7
+
+THREAD - pro1_output_p contents prior:
+	27, 37, 26, 7
+
+THREAD - pro1_output_p contents after:
+	27, 37, 26, 7, 11
+
+THREAD - pro2_output_p contents prior:
+	27, 37, 26, 7, 11
+
+THREAD - pro2_output_p contents after:
+	20, 27, 37, 26, 7, 11
+
+THREAD - pro1_output_p contents prior:
+	20, 27, 37, 26, 7, 11
+
+THREAD - pro1_output_p contents after:
+	20, 27, 37, 26, 7, 11, 33
+
+THREAD - con2_thread1 contents prior:
+	20, 27, 37, 26, 7, 11, 33
+
+THREAD - con2_thread1 contents after:
+	27, 37, 26, 7, 11, 33
+
+THREAD - con1_thread1 contents prior:
+	27, 37, 26, 7, 11, 33
+
+THREAD - con1_thread1 contents after:
+	37, 26, 7, 11, 33
+
+THREAD - pro1_output_p contents prior:
+	37, 26, 7, 11, 33
+
+THREAD - pro1_output_p contents after:
+	37, 26, 7, 11, 33, 17
+
+THREAD - pro1_output_p contents prior:
+	37, 26, 7, 11, 33, 17
+
+THREAD - pro1_output_p contents after:
+	37, 26, 7, 11, 33, 17, 9
+
+THREAD - pro1_output_p contents prior:
+	37, 26, 7, 11, 33, 17, 9
+
+THREAD - pro1_output_p contents after:
+	37, 26, 7, 11, 33, 17, 9, 7
+
+THREAD - pro1_output_p contents prior:
+	37, 26, 7, 11, 33, 17, 9, 7
+
+THREAD - pro1_output_p contents after:
+	37, 26, 7, 11, 33, 17, 9, 7, 27
+
+THREAD - con1_thread1 contents prior:
+	37, 26, 7, 11, 33, 17, 9, 7, 27
+
+THREAD - con1_thread1 contents after:
+	26, 7, 11, 33, 17, 9, 7, 27
+
+THREAD - pro1_output_p contents prior:
+	26, 7, 11, 33, 17, 9, 7, 27
+
+THREAD - pro1_output_p contents after:
+	26, 7, 11, 33, 17, 9, 7, 27, 13
+
+THREAD - con2_thread1 contents prior:
+	26, 7, 11, 33, 17, 9, 7, 27, 13
+
+THREAD - con2_thread1 contents after:
+	7, 11, 33, 17, 9, 7, 27, 13
+
+THREAD - con1_thread1 contents prior:
+	7, 11, 33, 17, 9, 7, 27, 13
+
+THREAD - con1_thread1 contents after:
+	11, 33, 17, 9, 7, 27, 13
+
+THREAD - con1_thread1 contents prior:
+	11, 33, 17, 9, 7, 27, 13
+
+THREAD - con1_thread1 contents after:
+	33, 17, 9, 7, 27, 13
+
+THREAD - pro2_output_p contents prior:
+	33, 17, 9, 7, 27, 13
+
+THREAD - pro2_output_p contents after:
+	38, 33, 17, 9, 7, 27, 13
+
+THREAD - pro1_output_p contents prior:
+	38, 33, 17, 9, 7, 27, 13
+
+THREAD - pro1_output_p contents after:
+	38, 33, 17, 9, 7, 27, 13, 39
+
+THREAD - con2_thread1 contents prior:
+	38, 33, 17, 9, 7, 27, 13, 39
+
+THREAD - con2_thread1 contents after:
+	33, 17, 9, 7, 27, 13, 39
+
+THREAD - pro2_output_p contents prior:
+	33, 17, 9, 7, 27, 13, 39
+
+THREAD - pro2_output_p contents after:
+	28, 33, 17, 9, 7, 27, 13, 39
+
+THREAD - pro2_output_p contents prior:
+	28, 33, 17, 9, 7, 27, 13, 39
+
+THREAD - pro2_output_p contents after:
+	12, 28, 33, 17, 9, 7, 27, 13, 39
+
+THREAD - pro1_output_p contents prior:
+	12, 28, 33, 17, 9, 7, 27, 13, 39
+
+THREAD - pro1_output_p contents after:
+	12, 28, 33, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - con2_thread1 contents prior:
+	12, 28, 33, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - con2_thread1 contents after:
+	28, 33, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - con2_thread1 contents prior:
+	28, 33, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - con2_thread1 contents after:
+	33, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - con1_thread1 contents prior:
+	33, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - con1_thread1 contents after:
+	17, 9, 7, 27, 13, 39, 39
+
+THREAD - pro2_output_p contents prior:
+	17, 9, 7, 27, 13, 39, 39
+
+THREAD - pro2_output_p contents after:
+	12, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - pro1_output_p contents prior:
+	12, 17, 9, 7, 27, 13, 39, 39
+
+THREAD - pro1_output_p contents after:
+	12, 17, 9, 7, 27, 13, 39, 39, 39
+
+THREAD - con2_thread1 contents prior:
+	12, 17, 9, 7, 27, 13, 39, 39, 39
+
+THREAD - con2_thread1 contents after:
+	17, 9, 7, 27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents prior:
+	17, 9, 7, 27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents after:
+	9, 7, 27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents prior:
+	9, 7, 27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents after:
+	7, 27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents prior:
+	7, 27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents after:
+	27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents prior:
+	27, 13, 39, 39, 39
+
+THREAD - con1_thread1 contents after:
+	13, 39, 39, 39
+
+THREAD - con1_thread1 contents prior:
+	13, 39, 39, 39
+
+THREAD - con1_thread1 contents after:
+	39, 39, 39
+
+THREAD - pro1_output_p contents prior:
+	39, 39, 39
+
+THREAD - pro1_output_p contents after:
+	39, 39, 39, 37
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 39, 37
+
+THREAD - pro2_output_p contents after:
+	34, 39, 39, 39, 37
+
+THREAD - pro1_output_p contents prior:
+	34, 39, 39, 39, 37
+
+THREAD - pro1_output_p contents after:
+	34, 39, 39, 39, 37, 27
+
+THREAD - con2_thread1 contents prior:
+	34, 39, 39, 39, 37, 27
+
+THREAD - con2_thread1 contents after:
+	39, 39, 39, 37, 27
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 39, 37, 27
+
+THREAD - pro2_output_p contents after:
+	22, 39, 39, 39, 37, 27
+
+THREAD - pro2_output_p contents prior:
+	22, 39, 39, 39, 37, 27
+
+THREAD - pro2_output_p contents after:
+	12, 22, 39, 39, 39, 37, 27
+
+THREAD - pro1_output_p contents prior:
+	12, 22, 39, 39, 39, 37, 27
+
+THREAD - pro1_output_p contents after:
+	12, 22, 39, 39, 39, 37, 27, 27
+
+THREAD - con2_thread1 contents prior:
+	12, 22, 39, 39, 39, 37, 27, 27
+
+THREAD - con2_thread1 contents after:
+	22, 39, 39, 39, 37, 27, 27
+
+THREAD - con2_thread1 contents prior:
+	22, 39, 39, 39, 37, 27, 27
+
+THREAD - con2_thread1 contents after:
+	39, 39, 39, 37, 27, 27
+
+THREAD - pro1_output_p contents prior:
+	39, 39, 39, 37, 27, 27
+
+THREAD - pro1_output_p contents after:
+	39, 39, 39, 37, 27, 27, 3
+
+THREAD - pro1_output_p contents prior:
+	39, 39, 39, 37, 27, 27, 3
+
+THREAD - pro1_output_p contents after:
+	39, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents after:
+	22, 39, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents prior:
+	22, 39, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents after:
+	39, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con1_thread1 contents prior:
+	39, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con1_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents after:
+	40, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents prior:
+	40, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents after:
+	32, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents prior:
+	32, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents after:
+	32, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents prior:
+	32, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - con2_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro2_output_p contents after:
+	36, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro1_output_p contents prior:
+	36, 39, 39, 37, 27, 27, 3, 27
+
+THREAD - pro1_output_p contents after:
+	36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents prior:
+	36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents after:
+	32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents prior:
+	32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents after:
+	24, 32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents prior:
+	24, 32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents after:
+	6, 24, 32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents prior:
+	6, 24, 32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents after:
+	24, 32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents prior:
+	24, 32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents after:
+	32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents prior:
+	32, 36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents after:
+	36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents prior:
+	36, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - con2_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents after:
+	18, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents prior:
+	18, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro2_output_p contents after:
+	6, 18, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro1_output_p contents prior:
+	6, 18, 39, 39, 37, 27, 27, 3, 27, 31
+
+THREAD - pro1_output_p contents after:
+	6, 18, 39, 39, 37, 27, 27, 3, 27, 31, 11
+
+THREAD - pro1_output_p contents prior:
+	6, 18, 39, 39, 37, 27, 27, 3, 27, 31, 11
+
+THREAD - pro1_output_p contents after:
+	6, 18, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39
+
+THREAD - con2_thread1 contents prior:
+	6, 18, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39
+
+THREAD - con2_thread1 contents after:
+	18, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39
+
+THREAD - con2_thread1 contents prior:
+	18, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39
+
+THREAD - con2_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27, 31, 11, 39
+
+THREAD - pro1_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27, 31, 11, 39
+
+THREAD - pro1_output_p contents after:
+	39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21
+
+THREAD - pro2_output_p contents prior:
+	39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21
+
+THREAD - pro2_output_p contents after:
+	10, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21
+
+THREAD - pro1_output_p contents prior:
+	10, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21
+
+THREAD - pro1_output_p contents after:
+	10, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29
+
+THREAD - con2_thread1 contents prior:
+	10, 39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29
+
+THREAD - con2_thread1 contents after:
+	39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29
+
+THREAD - con1_thread1 contents prior:
+	39, 39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29
+
+THREAD - con1_thread1 contents after:
+	39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29
+
+THREAD - pro1_output_p contents prior:
+	39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29
+
+THREAD - pro1_output_p contents after:
+	39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39
+
+THREAD - pro1_output_p contents prior:
+	39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39
+
+THREAD - pro1_output_p contents after:
+	39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11
+
+THREAD - con1_thread1 contents prior:
+	39, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11
+
+THREAD - con1_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3
+
+THREAD - pro2_output_p contents after:
+	34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3
+
+THREAD - pro1_output_p contents prior:
+	34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3
+
+THREAD - pro1_output_p contents after:
+	34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29
+
+THREAD - pro2_output_p contents prior:
+	34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29
+
+THREAD - pro2_output_p contents after:
+	2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29
+
+THREAD - pro1_output_p contents prior:
+	2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29
+
+THREAD - pro1_output_p contents after:
+	2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - pro2_output_p contents prior:
+	2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - pro2_output_p contents after:
+	4, 2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - con2_thread1 contents prior:
+	4, 2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - con2_thread1 contents after:
+	2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - con2_thread1 contents prior:
+	2, 34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - con2_thread1 contents after:
+	34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - con2_thread1 contents prior:
+	34, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31
+
+THREAD - pro2_output_p contents after:
+	14, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31
+
+THREAD - con2_thread1 contents prior:
+	14, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1
+
+THREAD - pro2_output_p contents after:
+	28, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1
+
+THREAD - pro1_output_p contents prior:
+	28, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1
+
+THREAD - pro1_output_p contents after:
+	28, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - con2_thread1 contents prior:
+	28, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - pro2_output_p contents after:
+	28, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - con2_thread1 contents prior:
+	28, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - pro2_output_p contents after:
+	24, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - con2_thread1 contents prior:
+	24, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - pro2_output_p contents after:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - con2_thread1 contents prior:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23
+
+THREAD - pro2_output_p contents after:
+	10, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23
+
+THREAD - con2_thread1 contents prior:
+	10, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23
+
+THREAD - pro1_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23
+
+THREAD - pro1_output_p contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37
+
+THREAD - pro2_output_p contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37
+
+THREAD - pro2_output_p contents after:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37
+
+THREAD - pro1_output_p contents prior:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37
+
+THREAD - pro1_output_p contents after:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33
+
+THREAD - pro2_output_p contents prior:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33
+
+THREAD - pro2_output_p contents after:
+	16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33
+
+THREAD - pro1_output_p contents prior:
+	16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33
+
+THREAD - pro1_output_p contents after:
+	16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35
+
+THREAD - pro2_output_p contents prior:
+	16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35
+
+THREAD - pro2_output_p contents after:
+	34, 16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35
+
+THREAD - pro1_output_p contents prior:
+	34, 16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35
+
+THREAD - pro1_output_p contents after:
+	34, 16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15
+
+THREAD - con2_thread1 contents prior:
+	34, 16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15
+
+THREAD - con2_thread1 contents after:
+	16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15
+
+THREAD - con2_thread1 contents prior:
+	16, 26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15
+
+THREAD - con2_thread1 contents after:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15
+
+THREAD - pro1_output_p contents prior:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15
+
+THREAD - pro1_output_p contents after:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13
+
+THREAD - con2_thread1 contents prior:
+	26, 37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13
+
+THREAD - con2_thread1 contents after:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13
+
+THREAD - con1_thread1 contents prior:
+	37, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13
+
+THREAD - con1_thread1 contents after:
+	27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13
+
+THREAD - pro1_output_p contents prior:
+	27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13
+
+THREAD - pro1_output_p contents after:
+	27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35
+
+THREAD - pro2_output_p contents prior:
+	27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35
+
+THREAD - pro2_output_p contents after:
+	26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35
+
+THREAD - pro1_output_p contents prior:
+	26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35
+
+THREAD - pro1_output_p contents after:
+	26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21
+
+THREAD - pro2_output_p contents prior:
+	26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21
+
+THREAD - pro2_output_p contents after:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21
+
+THREAD - pro1_output_p contents prior:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21
+
+THREAD - pro1_output_p contents after:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31
+
+THREAD - pro1_output_p contents prior:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31
+
+THREAD - pro1_output_p contents after:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39
+
+THREAD - pro2_output_p contents prior:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39
+
+THREAD - pro2_output_p contents after:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39
+
+THREAD - pro1_output_p contents prior:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39
+
+THREAD - pro1_output_p contents after:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11
+
+THREAD - pro2_output_p contents prior:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11
+
+THREAD - pro2_output_p contents after:
+	34, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11
+
+THREAD - pro1_output_p contents prior:
+	34, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11
+
+THREAD - pro1_output_p contents after:
+	34, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33
+
+THREAD - con2_thread1 contents prior:
+	34, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33
+
+THREAD - con2_thread1 contents after:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33
+
+THREAD - pro2_output_p contents prior:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33
+
+THREAD - pro2_output_p contents after:
+	36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33
+
+THREAD - pro1_output_p contents prior:
+	36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33
+
+THREAD - pro1_output_p contents after:
+	36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15
+
+THREAD - pro2_output_p contents prior:
+	36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15
+
+THREAD - pro2_output_p contents after:
+	4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15
+
+THREAD - pro1_output_p contents prior:
+	4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15
+
+THREAD - pro1_output_p contents after:
+	4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - pro2_output_p contents prior:
+	4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - pro2_output_p contents after:
+	18, 4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+Uh oh. Looks like you went past the max size.
+Uh oh. Looks like you went past the max size.
+
+THREAD - con2_thread1 contents prior:
+	18, 4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents after:
+	4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents prior:
+	4, 36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents after:
+	36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents prior:
+	36, 4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents after:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents prior:
+	4, 34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents after:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents prior:
+	34, 26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents after:
+	26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents prior:
+	26, 27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con2_thread1 contents after:
+	27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	27, 27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	27, 3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	3, 27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	27, 31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	31, 11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	11, 39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	39, 21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	21, 29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	29, 39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	39, 11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	11, 3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	3, 29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	29, 19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	19, 13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	13, 31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	31, 11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	11, 1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	1, 19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	19, 13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	13, 23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	23, 37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	37, 33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	33, 35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	35, 15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	15, 13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	13, 35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	35, 21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	21, 31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	31, 39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	39, 11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	11, 33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	11, 33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	33, 15, 1
+
+THREAD - con1_thread1 contents prior:
+	33, 15, 1
+
+THREAD - con1_thread1 contents after:
+	15, 1
+
+THREAD - con1_thread1 contents prior:
+	15, 1
+
+THREAD - con1_thread1 contents after:
+	1
+
+THREAD - con1_thread1 contents prior:
+	1
+List is now empty
+Uh oh. Looks like the list is empty.
