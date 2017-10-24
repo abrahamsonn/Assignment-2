@@ -61,8 +61,10 @@ int main(void)
            list_t* list_p = &list;
 
     /* Spin the 4 threads - producers 1 & 2, consumers 1 & 2 */
-    pthread_t prod1, prod2;
-    pthread_t con1, con2;
+    pthread_t prod1; 
+    pthread_t prod2;
+    pthread_t con1;
+    pthread_t con2;
 
     /* Print all information prior to modifications made by producers 1 & 2 */
     printf("INITIAL CONTENTS:\n\t");
@@ -78,7 +80,7 @@ int main(void)
     pthread_create( &prod1, NULL, (void*) pro_thread1, list_p );
     pthread_create( &prod2, NULL, (void*) pro_thread2, list_p );
     pthread_create( &con1, NULL, (void*) con_thread1, list_p );
-//    pthread_create( &con2, NULL, (void*) con_thread2, list_p );
+    pthread_create( &con2, NULL, (void*) con_thread2, list_p );
 
 
     /* Imagine a method to free all nodes */
@@ -86,6 +88,7 @@ int main(void)
     pthread_join(prod1, NULL);
     pthread_join(prod2, NULL);
     pthread_join(con1, NULL);
+    pthread_join(con2, NULL);
     
     return 0;
 }
@@ -191,6 +194,7 @@ void pro_thread2(list_t* list)
 void con_thread1(list_t* list)
 {
     for ( ; ; ) {
+
         /* Wait for access to list */ 
         while (pthread_mutex_trylock(&list_mutex) != 0) {
             /* Keep checking */
@@ -198,40 +202,28 @@ void con_thread1(list_t* list)
 
         /* If the list is empty, then exit. There's nothing for you to do. */
         if (list->current_size == 0) {
+            printf("Uh oh. Looks like the list is empty.\n");
             pthread_mutex_unlock(&list_mutex);
-            printf("Uh oh. Looks like the list is empty.");
             return;
         }
 
-        struct node_t* iterator_node = list->head;
-
-        while (iterator_node->random_val % 2 == 0) {
-            /* If you've reached the end of the list, let another thread have a go at the buffer then start at the beginning again */
-            if (iterator_node->next == NULL) {
-                pthread_mutex_unlock(&list_mutex);                  /* Release */
-                while(pthread_mutex_trylock(&list_mutex) != 0) {    /* Wait to gain control */
-                    /* ... */
-                }
-
-                /* Now you have control of the buffer again, go back to checking the head random value first */
-                iterator_node = list->head;
-                continue;
-            }
-
-            iterator_node = iterator_node->next;
-
+        /* If the first node has an even value, try again and check for an odd. */
+        if (list->head->random_val % 2 == 0) {
+            pthread_mutex_unlock(&list_mutex);
+            continue;
         }
 
         /* Output buffer contents */
-        print_all(list, "THREAD - con1_thread1 contents prior");
+        print_all(list, "THREAD - con1_thread1 contents prior\n");
 
         /* Upon exiting the loop, iterator_node has an odd random value */
+        struct node_t* node_to_remove = list->head; 
         list->head = list->head->next;
         list->head->prev = NULL;
         list->current_size--;
-        free(&iterator_node);
+        free(node_to_remove);
 
-        print_all(list, "THREAD - con1_thread1 contents after");
+        print_all(list, "THREAD - con1_thread1 contents after\n");
 
         pthread_mutex_unlock(&list_mutex);
 
@@ -242,6 +234,41 @@ void con_thread1(list_t* list)
 
 void con_thread2(list_t* list)
 {
+    for ( ; ; ) {
+
+        /* Wait for access to list */ 
+        while (pthread_mutex_trylock(&list_mutex) != 0) {
+            /* Keep checking */
+        }
+
+        /* If the list is empty, then exit. There's nothing for you to do. */
+        if (list->current_size == 0) {
+            printf("Uh oh. Looks like the list is empty.\n");
+            pthread_mutex_unlock(&list_mutex);
+            return;
+        }
+
+        /* If the first node has an even value, try again and check for an odd. */
+        if (list->head->random_val % 2 != 0) {
+            pthread_mutex_unlock(&list_mutex);
+            continue;
+        }
+
+        /* Output buffer contents */
+        print_all(list, "THREAD - con2_thread1 contents prior\n");
+
+        /* Upon exiting the loop, iterator_node has an odd random value */
+        struct node_t* node_to_remove = list->head; 
+        list->head = list->head->next;
+        list->head->prev = NULL;
+        list->current_size--;
+        free(node_to_remove);
+
+        print_all(list, "THREAD - con2_thread1 contents after\n");
+
+        pthread_mutex_unlock(&list_mutex);
+
+    }
 
     return;
 }
