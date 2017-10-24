@@ -6,11 +6,6 @@
 
 /* Static variables */
 static pthread_mutex_t list_mutex = PTHREAD_MUTEX_INITIALIZER;
-static FILE* pro1_output_p;
-static FILE* pro2_output_p;
-static FILE* con1_output_p;
-static FILE* con2_output_p;
-
 
 /* node_t struct thing */
 typedef struct node_t {
@@ -33,16 +28,12 @@ void pro_thread1(list_t* list);
 void pro_thread2(list_t* list);
 void con_thread1(list_t* list);
 void con_thread2(list_t* list);
-void print_all(list_t* list, FILE* file_p);
+void print_all(list_t* list, char* thread_name);
+void remove_all(list_t* list);
 
 
 int main(void)
 {
-    pro1_output_p = fopen("producer1-output.txt", "w+");
-//    pro2_output_p = fopen("producer2-output.txt", "w+");
-//    con1_output_p = fopen("consumer1-output.txt", "w+");
-//    con2_output_p = fopen("consumer2-output.txt", "w+");
-
     srand(time(NULL));
 
     /* Initialize the list with the 3 nodes and their values */
@@ -73,127 +64,178 @@ int main(void)
     pthread_t prod1, prod2;
     pthread_t con1, con2;
 
+    /* Print all information prior to modifications made by producers 1 & 2 */
+    printf("INITIAL CONTENTS:\n\t");
     struct node_t* current_node = list.head;
-
-    while (current_node != NULL) {
-        printf("NODE #%d\trandom_val = %d\n", current_node->id, current_node->random_val);
-        //fprintf(file_p, "NODE #%d\trandom_val = %d\n", current_node->id, current_node->random_val);
+    while (current_node->next != NULL) {
+        printf("%d, ", current_node->random_val);
         current_node = current_node->next;
     }
+    printf("%d\n", current_node->random_val);
 
     printf("Calling pthread_create\n");
 
     pthread_create( &prod1, NULL, (void*) pro_thread1, list_p );
-//    pthread_create( &prod2, NULL, (void*) pro_thread2, list_p );
-//    pthread_create( &con1, NULL, (void*) con_thread1, list_p );
+    pthread_create( &prod2, NULL, (void*) pro_thread2, list_p );
+    pthread_create( &con1, NULL, (void*) con_thread1, list_p );
 //    pthread_create( &con2, NULL, (void*) con_thread2, list_p );
 
 
     /* Imagine a method to free all nodes */
 
     pthread_join(prod1, NULL);
+    pthread_join(prod2, NULL);
+    pthread_join(con1, NULL);
     
-    fclose(pro1_output_p);
-//    fclose(pro2_output_p);
-//    fclose(con1_output_p);
-//    fclose(con2_output_p);
-
     return 0;
 }
 
 void pro_thread1(list_t* list)
 {
-    /* allocate a spot for the new node */
-    struct node_t* new_node = (struct node_t*) malloc(sizeof(struct node_t));
+    /* Loop until the buffer gets filled. */
+    for( ; ; ) {
 
-    /* loop until an odd number is created */
-    int odd_number = rand() % 40 + 1;
-    while (odd_number % 2 == 0) {
-        odd_number = rand() % 40 + 1;
+        /* loop until an odd number is created */
+        int odd_number = rand() % 40 + 1;
+        while (odd_number % 2 == 0) {
+            odd_number = rand() % 40 + 1;
+        }
+
+        /* allocate a spot for the new node */
+        struct node_t* new_node = (struct node_t*) malloc(sizeof(struct node_t));
+
+        /* Initialize the new_node as much as possible before locking up the list, minimize time in critical region */
+        new_node->random_val    = odd_number;
+        new_node->next          = NULL;
+
+        while (pthread_mutex_trylock(&list_mutex) != 0) {
+            /* ... */
+        }
+
+        /* Check if the loop can be terminated */
+        if (list->current_size >= 40) {
+            printf("Uh oh. Looks like you went past the max size.\n");
+            free(new_node);
+            pthread_mutex_unlock(&list_mutex);
+            return;
+        }
+
+        /* Output buffer contents */
+        print_all(list, "THREAD - pro1_output_p contents prior");
+
+        list->tail->next    = new_node;
+        new_node->id        = list->current_size + 1;
+        new_node->prev      = list->tail;
+        list->tail          = new_node;
+        list->current_size++;
+
+        /* Output buffer contents */
+        print_all(list, "THREAD - pro1_output_p contents after");
+
+        pthread_mutex_unlock(&list_mutex);
+
     }
-
-    if (list->current_size > 40) {
-        printf("Uh oh. Looks like you went past the max size.\n");
-        free(new_node);
-        return;
-    }
-
-//    while (pthread_mutex_trylock(&list_mutex) != 0) {
-//        /* Wait until list can be accessed */
-//    }
-//
-//    printf("mutex is unlocked\n");
-
-    new_node->id = list->current_size;
-    list->tail = new_node;
-    list->current_size++;
-
-//    pthread_mutex_unlock(&list_mutex);
-
-    printf("Added a node to the end of the linked list\n");
-
-    /* Save current list state to file */
-    print_all(list, pro1_output_p);
 
     return;
 }
 
 void pro_thread2(list_t* list)
 {
-    /* Allocate a new spot for the new node */
-    struct node_t* new_node = (struct node_t*) malloc(sizeof(struct node_t));
+    for ( ; ; ) {
 
-    /* Loop until an even number is created */
-    int even_number = rand() % 40 + 1;
-    while (even_number % 2 != 0) {
-        even_number = rand() % 40 + 1;
+        /* Allocate a new spot for the new node */
+        struct node_t* new_node = (struct node_t*) malloc(sizeof(struct node_t));
+
+        /* Loop until an even number is created */
+        int even_number = rand() % 40 + 1;
+        while (even_number % 2 != 0) {
+            even_number = rand() % 40 + 1;
+        }
+
+        /* Initialize the new_node as much as possible before locking up the list, minimize time in critical region */
+        new_node->random_val = even_number;
+        new_node->prev = NULL;
+
+        while (pthread_mutex_trylock(&list_mutex) != 0) {
+            /* Wait until list can be accessed */
+        }
+
+        /* Check if the loop can be terminated */
+        if (list->current_size >= 40) {
+            printf("Uh oh. Looks like you went past the max size.\n");
+            free(new_node);
+            pthread_mutex_unlock(&list_mutex);
+            return;
+        }
+
+        /* Output buffer contents */
+        print_all(list, "THREAD - pro2_output_p contents prior");
+
+        /* Add to beginning of list somehow */
+        new_node->next      = list->head;
+        new_node->id        = list->current_size;
+        list->head->prev    = new_node;
+        list->head          = new_node;
+        list->current_size++;
+
+        /* Output buffer contents */
+        print_all(list, "THREAD - pro2_output_p contents after");
+
+        pthread_mutex_unlock(&list_mutex);
+
     }
-
-    if (list->current_size > 40) {
-        printf("Uh oh. Looks like you went past the max size.\n");
-        free(new_node);
-        return;
-    }
-//    else {
-//        /* Attempt to access the linked list and add the node to the head */
-//        new_node->random_val = even_number;
-//        list->head = new_node;
-//        list->current_size++;
-//    }
-
-    while (pthread_mutex_trylock(&list_mutex) != 0) {
-        /* Wait until list can be accessed */
-    }
-
-    /* Add to beginning of list somehow */
-
-    /* Save current list state to file */
-    print_all(list, pro2_output_p);
-
-    pthread_mutex_unlock(&list_mutex);
-
-    printf("Added a node to the beginning of the linked list\n");
 
     return;
 }
 
 void con_thread1(list_t* list)
 {
-    /* Delete from the head of the list */
+    for ( ; ; ) {
+        /* Wait for access to list */ 
+        while (pthread_mutex_trylock(&list_mutex) != 0) {
+            /* Keep checking */
+        }
 
-    while (pthread_mutex_trylock(&list_mutex) != 0) {
-        /* Wait until list can be accessed */
+        /* If the list is empty, then exit. There's nothing for you to do. */
+        if (list->current_size == 0) {
+            pthread_mutex_unlock(&list_mutex);
+            printf("Uh oh. Looks like the list is empty.");
+            return;
+        }
+
+        struct node_t* iterator_node = list->head;
+
+        while (iterator_node->random_val % 2 == 0) {
+            /* If you've reached the end of the list, let another thread have a go at the buffer then start at the beginning again */
+            if (iterator_node->next == NULL) {
+                pthread_mutex_unlock(&list_mutex);                  /* Release */
+                while(pthread_mutex_trylock(&list_mutex) != 0) {    /* Wait to gain control */
+                    /* ... */
+                }
+
+                /* Now you have control of the buffer again, go back to checking the head random value first */
+                iterator_node = list->head;
+                continue;
+            }
+
+            iterator_node = iterator_node->next;
+
+        }
+
+        /* Output buffer contents */
+        print_all(list, "THREAD - con1_thread1 contents prior");
+
+        /* Upon exiting the loop, iterator_node has an odd random value */
+        list->head = list->head->next;
+        list->head->prev = NULL;
+        list->current_size--;
+        free(&iterator_node);
+
+        print_all(list, "THREAD - con1_thread1 contents after");
+
+        pthread_mutex_unlock(&list_mutex);
+
     }
-
-    /* Remove from the head of the list */
-    list->head = list->head->next;
-    free(list->head->prev);
-    list->head->prev = NULL;
-
-    /* Save current list state to file */
-    print_all(list, con1_output_p);
-
-    pthread_mutex_unlock(&list_mutex);
 
     return;
 }
@@ -204,15 +246,25 @@ void con_thread2(list_t* list)
     return;
 }
 
-void print_all(list_t* list, FILE* file_p)
+void print_all(list_t* list, char* thread_name)
 {
+    printf("\n%s:\n\t", thread_name);
+
     struct node_t* current_node = list->head;
 
-    while (current_node != NULL) {
-        printf("NODE #%d\trandom_val = %d\n", current_node->id, current_node->random_val);
-        fprintf(file_p, "NODE #%d\trandom_val = %d\n", current_node->id, current_node->random_val);
+    while (current_node->next != NULL) {
+        printf("%d, ", current_node->random_val);
+//        fprintf(file_p, "NODE #%d \trandom_val = %d\n", current_node->id, current_node->random_val);
         current_node = current_node->next;
     }
 
+    printf("%d\n", current_node->random_val);
+
     return;    
+}
+
+void remove_all(list_t* list)
+{
+//    while c
+    return;
 }
