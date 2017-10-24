@@ -214,7 +214,7 @@ void con_thread1(list_t* list)
         }
 
         /* Output buffer contents */
-        print_all(list, "THREAD - con1_thread1 contents prior\n");
+        print_all(list, "THREAD - con1_thread1 contents prior");
 
         /* Upon exiting the loop, iterator_node has an odd random value */
         struct node_t* node_to_remove = list->head; 
@@ -223,7 +223,7 @@ void con_thread1(list_t* list)
         list->current_size--;
         free(node_to_remove);
 
-        print_all(list, "THREAD - con1_thread1 contents after\n");
+        print_all(list, "THREAD - con1_thread1 contents after");
 
         pthread_mutex_unlock(&list_mutex);
 
@@ -255,7 +255,7 @@ void con_thread2(list_t* list)
         }
 
         /* Output buffer contents */
-        print_all(list, "THREAD - con2_thread1 contents prior\n");
+        print_all(list, "THREAD - con2_thread1 contents prior");
 
         /* Upon exiting the loop, iterator_node has an odd random value */
         struct node_t* node_to_remove = list->head; 
@@ -264,7 +264,7 @@ void con_thread2(list_t* list)
         list->current_size--;
         free(node_to_remove);
 
-        print_all(list, "THREAD - con2_thread1 contents after\n");
+        print_all(list, "THREAD - con2_thread1 contents after");
 
         pthread_mutex_unlock(&list_mutex);
 
